@@ -14,23 +14,33 @@ public class Enemies : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerRef = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(detectPlayer && playerRef != null)
+        float disToPlayer = (transform.position - playerRef.transform.position).magnitude;
+
+        if (detectPlayer && playerRef != null)
         {
             Vector3 distanceToPlayer = (playerRef.transform.position - transform.position).normalized;
-            speed = 5;
+            speed = 4;
 
             transform.forward = distanceToPlayer;
             transform.position += distanceToPlayer * speed * Time.deltaTime;
+
+            if(disToPlayer > detectionRange)
+            {
+                detectPlayer = false;
+            }
         }
         else
         {
-
+            if(disToPlayer <= detectionRange)
+            {
+                detectPlayer = true;
+            }
         }
     }
 }

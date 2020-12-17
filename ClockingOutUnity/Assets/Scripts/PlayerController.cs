@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 5;
     public float health = 3;
+    public float xPause;
+    public float yPause;
+    public float zPause;
     
     // Start is called before the first frame update
     void Start()
@@ -16,8 +19,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (health < 0)
-        {
             Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
             transform.Translate((input * speed) * Time.deltaTime);
 
@@ -25,6 +26,5 @@ public class PlayerController : MonoBehaviour
             {
 
             }
-        }
     }
 }
