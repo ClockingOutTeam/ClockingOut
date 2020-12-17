@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - conveyor belt
+  - Elevator up
+  - Push
+  - Damage
+  - Spin
+  - Elevator
   layers:
   - Default
   - TransparentFX
