@@ -3478,7 +3478,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1686440412, guid: 2fe12567cf54f42488f986bab58ce094, type: 3}
       propertyPath: m_Constraints
-      value: 48
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6671642836311468284, guid: 2fe12567cf54f42488f986bab58ce094,
         type: 3}
@@ -3551,7 +3551,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1822123099, guid: 831d2a37f0156a84494603fc56187c4a, type: 3}
       propertyPath: m_Constraints
-      value: 48
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1667867065846819345, guid: 831d2a37f0156a84494603fc56187c4a,
         type: 3}
