@@ -37,9 +37,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Damage"))
+    private void OnCollisionEnter(Collision collision)
+    {  
+        if (gameObject.CompareTag("Damage"))
         {
             SceneManager.LoadScene("DeathScene");
         }
