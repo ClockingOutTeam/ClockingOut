@@ -517,7 +517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &173350423
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1704,7 +1704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -1.96}
+  m_LocalPosition: {x: 0, y: 1, z: -2.266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1722,8 +1722,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fc4b9adced5dc846960134063656ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  direction: 0
+  player: {fileID: 1686440415}
+  smoothness: 0.883
+  lookAtPlayer: 1
+  rotateAroundPlayer: 1
+  rotationSpeed: 5
 --- !u!1 &1106027996
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,13 +3193,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcff42ef58f7d024483efba210275a04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1686440411}
   speed: 5
   health: 3
   xPause: 0
   yPause: 0
   zPause: 0
   timer: {fileID: 0}
+--- !u!4 &1686440415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 5bd3966f6293f0241949096fda04ade8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1694907280}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1694907280
 PrefabInstance:
   m_ObjectHideFlags: 0
