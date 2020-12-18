@@ -25,10 +25,12 @@ public class PlayerController : MonoBehaviour
         transform.Translate((input * speed) * Time.deltaTime);
 
         Vector3 inputRotate = new Vector3(0.0f, Input.GetAxis("horizontalR"), 0.0f);
-        transform.Rotate((inputRotate * speed * 4) * Time.deltaTime); 
+        transform.Rotate((inputRotate * speed * 4) * Time.deltaTime);
         
-        
-        if(Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d") || Input.GetKeyDown("space"))
+        Vector3 inputJump = new Vector3(0.0f, Input.GetAxis("Jump"), 0.0f);
+        transform.Translate((input * speed) * Time.deltaTime);
+
+        if (Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d") || Input.GetKeyDown("space"))
         {
                 timer.timerIsRunning = true;
         }
