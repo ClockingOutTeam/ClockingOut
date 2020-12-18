@@ -24,11 +24,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667867065846819345}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.066214755, y: 0.061113942, z: 0.030080413}
-  m_Center: {x: -0.004132557, y: -0.0040424587, z: 0.00030174255}
+  m_Size: {x: 0.066214755, y: 0.07124802, z: 0.046343613}
+  m_Center: {x: -0.004132557, y: 0.00102458, z: 0.0019350052}
 --- !u!65 &6658659014164920248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37,7 +37,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667867065846819345}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.037549164, y: 0.05315431, z: 0.012458954}
@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d817a74b545b3644eb59e92bbdf94f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: {fileID: 0}
   speed: 3
 --- !u!1001 &7207053890130293528
 PrefabInstance:
