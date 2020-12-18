@@ -15,6 +15,7 @@ public class Enemies : MonoBehaviour
     void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
+        gameObject.tag = "Damage";
     }
 
     // Update is called once per frame
