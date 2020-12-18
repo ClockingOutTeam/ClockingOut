@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemies : MonoBehaviour
 {
     private GameObject playerRef;
-
+    public GameObject Damage;
     public float speed = 3;
 
     private bool detectPlayer = false;
