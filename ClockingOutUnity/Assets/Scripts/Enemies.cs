@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemies : MonoBehaviour
 {
     private GameObject playerRef;
-
+    public GameObject Damage;
     public float speed = 3;
 
     private bool detectPlayer = false;
@@ -15,6 +15,7 @@ public class Enemies : MonoBehaviour
     void Start()
     {
         playerRef = GameObject.FindGameObjectWithTag("Player");
+        gameObject.tag = "Damage";
     }
 
     // Update is called once per frame

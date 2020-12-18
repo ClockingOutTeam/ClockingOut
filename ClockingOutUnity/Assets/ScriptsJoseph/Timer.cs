@@ -8,8 +8,7 @@ public class Timer : MonoBehaviour
     public bool timerIsRunning = false;
     void Start()
     {
-        //this boolean is set to true when the scene is loaded(if this script is on an object)
-        timerIsRunning = true;
+
     }
     void Update()
     {

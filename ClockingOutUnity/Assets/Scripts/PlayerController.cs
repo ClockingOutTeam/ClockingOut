@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public GameObject player;
+    public Rigidbody rgb;
     public float speed = 5;
-    public float health = 3;
     public float xPause;
     public float yPause;
     public float zPause;
@@ -25,12 +26,23 @@ public class PlayerController : MonoBehaviour
         transform.Translate((input * speed) * Time.deltaTime);
 
         Vector3 inputRotate = new Vector3(0.0f, Input.GetAxis("horizontalR"), 0.0f);
-        transform.Rotate((inputRotate * speed) * Time.deltaTime); 
+        transform.Rotate((inputRotate * speed * 10) * Time.deltaTime);
         
-        
-        if(Input.GetKeyDown("W") || Input.GetKeyDown("A") || Input.GetKeyDown("S") || Input.GetKeyDown("D") || Input.GetKeyDown("space"))
+        Vector3 inputJump = new Vector3(0.0f, Input.GetAxis("Jump"), 0.0f);
+        transform.Translate((inputJump * speed) * Time.deltaTime);
+
+        if (Input.anyKey)
         {
                 timer.timerIsRunning = true;
+        }
+
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {  
+        if (other.gameObject.tag == "Damage")
+        {
+            SceneManager.LoadScene("DeathScene");
         }
     }
 }
