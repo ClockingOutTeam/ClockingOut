@@ -3688,7 +3688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116116455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.310999, y: 10.139999, z: 16.93}
+  m_LocalPosition: {x: 8.74, y: 15.88, z: -1.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3716,7 +3716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1254484963}
-  smoothness: 0
+  smoothness: 0.323
   lookAtPlayer: 1
   rotateAroundPlayer: 1
   rotationSpeed: 5
