@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         transform.Rotate((inputRotate * speed * 4) * Time.deltaTime); 
         
         
-        if(Input.GetKeyDown("W") || Input.GetKeyDown("A") || Input.GetKeyDown("S") || Input.GetKeyDown("D") || Input.GetKeyDown("space"))
+        if(Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d") || Input.GetKeyDown("space"))
         {
                 timer.timerIsRunning = true;
         }
