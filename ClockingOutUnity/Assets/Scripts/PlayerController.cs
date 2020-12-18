@@ -30,16 +30,16 @@ public class PlayerController : MonoBehaviour
         Vector3 inputJump = new Vector3(0.0f, Input.GetAxis("Jump"), 0.0f);
         transform.Translate((inputJump * speed) * Time.deltaTime);
 
-        if (Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d") || Input.GetKeyDown("space"))
+        if (Input.anyKey)
         {
                 timer.timerIsRunning = true;
         }
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collision other)
     {  
-        if (gameObject.CompareTag("Damage"))
+        if (other.gameObject.tag == "Damage")
         {
             SceneManager.LoadScene("DeathScene");
         }
