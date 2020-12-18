@@ -16,24 +16,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
---- !u!114 &1686440414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6671642836311468284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcff42ef58f7d024483efba210275a04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 6671642836311468284}
-  speed: 5
-  xPause: 0
-  yPause: 0
-  zPause: 0
-  timer: {fileID: 0}
 --- !u!65 &5269365391129861718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47,6 +29,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39786816, y: 0.37535864, z: 0.14629173}
   m_Center: {x: -0.002813816, y: 0.19414541, z: 0.009646416}
+--- !u!114 &1686440414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6671642836311468284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcff42ef58f7d024483efba210275a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6671642836311468284}
+  rgb: {fileID: 1686440412}
+  speed: 5
+  xPause: 0
+  yPause: 0
+  zPause: 0
+  timer: {fileID: 0}
 --- !u!1001 &3438360711734014453
 PrefabInstance:
   m_ObjectHideFlags: 0

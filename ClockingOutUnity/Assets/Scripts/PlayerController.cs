@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public GameObject player;
+    public Rigidbody rgb;
     public float speed = 5;
     public float xPause;
     public float yPause;
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {  
         if (other.gameObject.tag == "Damage")
         {
