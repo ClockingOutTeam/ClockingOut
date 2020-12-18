@@ -3715,8 +3715,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fc4b9adced5dc846960134063656ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2113321431}
-  direction: 0
+  player: {fileID: 1254484963}
+  smoothness: 0
+  lookAtPlayer: 1
+  rotateAroundPlayer: 1
+  rotationSpeed: 5
 --- !u!1 &1117256679
 GameObject:
   m_ObjectHideFlags: 0
@@ -4548,6 +4551,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fe12567cf54f42488f986bab58ce094, type: 3}
+--- !u!4 &1254484963 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7695866811212438255, guid: 2fe12567cf54f42488f986bab58ce094,
+    type: 3}
+  m_PrefabInstance: {fileID: 1254484962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259765580
 GameObject:
   m_ObjectHideFlags: 0
@@ -7762,9 +7771,3 @@ Transform:
   m_Father: {fileID: 1679373707}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2113321431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6671642836311468284, guid: 2fe12567cf54f42488f986bab58ce094,
-    type: 3}
-  m_PrefabInstance: {fileID: 1254484962}
-  m_PrefabAsset: {fileID: 0}
