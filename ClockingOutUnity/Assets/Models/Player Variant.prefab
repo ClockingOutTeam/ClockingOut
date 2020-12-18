@@ -15,9 +15,9 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!136 &1686440413
-CapsuleCollider:
+  m_CollisionDetection: 1
+--- !u!65 &5269365391129861718
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26,10 +26,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.22250418
-  m_Height: 0.5812361
-  m_Direction: 1
-  m_Center: {x: -0.0046372265, y: 0.20938194, z: -0.022184968}
+  serializedVersion: 2
+  m_Size: {x: 0.41281033, y: 0.37535864, z: 0.16496849}
+  m_Center: {x: 0.0009217262, y: 0.19414541, z: 0.0040426254}
 --- !u!114 &1686440414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,8 +42,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6671642836311468284}
+  rgb: {fileID: 1686440412}
   speed: 5
-  health: 3
   xPause: 0
   yPause: 0
   zPause: 0
@@ -59,17 +58,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5bd3966f6293f0241949096fda04ade8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.82
+      value: 5.28
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5bd3966f6293f0241949096fda04ade8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.35
+      value: -0.68
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5bd3966f6293f0241949096fda04ade8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 20.65
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5bd3966f6293f0241949096fda04ade8,
         type: 3}

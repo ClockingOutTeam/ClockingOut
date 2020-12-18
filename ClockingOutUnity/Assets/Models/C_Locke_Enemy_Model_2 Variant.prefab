@@ -27,8 +27,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.053184103, y: 0.061113942, z: 0.012458954}
-  m_Center: {x: -0.00037392377, y: -0.0040424587, z: -0.00020928346}
+  m_Size: {x: 0.066214755, y: 0.07124802, z: 0.046343613}
+  m_Center: {x: -0.004132557, y: 0.00102458, z: 0.0019350052}
 --- !u!114 &1822123101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,6 +41,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d817a74b545b3644eb59e92bbdf94f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: {fileID: 0}
   speed: 3
 --- !u!1001 &7207053890130293528
 PrefabInstance:
@@ -52,17 +53,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 55c0e30cf45470a43b0ed40bda57b578,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.28
+      value: 6.18
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 55c0e30cf45470a43b0ed40bda57b578,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.38
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 55c0e30cf45470a43b0ed40bda57b578,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.48
+      value: 17.6
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 55c0e30cf45470a43b0ed40bda57b578,
         type: 3}
@@ -123,6 +124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: C_Locke_Enemy_Model_2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 55c0e30cf45470a43b0ed40bda57b578,
+        type: 3}
+      propertyPath: m_TagString
+      value: Damage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c0e30cf45470a43b0ed40bda57b578, type: 3}
