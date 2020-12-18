@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         transform.Rotate((inputRotate * speed * 4) * Time.deltaTime);
         
         Vector3 inputJump = new Vector3(0.0f, Input.GetAxis("Jump"), 0.0f);
-        transform.Translate((input * speed) * Time.deltaTime);
+        transform.Translate((inputJump * speed) * Time.deltaTime);
 
         if (Input.GetKeyDown("w") || Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("d") || Input.GetKeyDown("space"))
         {
