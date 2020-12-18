@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -22,10 +23,11 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                //this displays to the console tha tthe time has run out.
+                //this displays to the console tha the time has run out.
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                SceneManager.LoadScene("DeathScene");
             }
         }
     }

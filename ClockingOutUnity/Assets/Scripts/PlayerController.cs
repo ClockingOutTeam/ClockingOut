@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     {  
         if (other.gameObject.tag == "Damage")
         {
+            Debug.Log("Hit Me!!!");
             SceneManager.LoadScene("DeathScene");
         }
     }
