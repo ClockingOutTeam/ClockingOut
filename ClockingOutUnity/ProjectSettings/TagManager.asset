@@ -8,6 +8,8 @@ TagManager:
   - Damage
   - Spin
   - Win
+  - Elevator
+  - Push
   layers:
   - Default
   - TransparentFX

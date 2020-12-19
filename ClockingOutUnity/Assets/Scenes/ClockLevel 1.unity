@@ -4188,7 +4188,7 @@ GameObject:
   - component: {fileID: 904994830}
   m_Layer: 0
   m_Name: Fin (3)
-  m_TagString: Untagged
+  m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4468,7 +4468,7 @@ GameObject:
   - component: {fileID: 1036067969}
   m_Layer: 0
   m_Name: Fin (1)
-  m_TagString: Untagged
+  m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5746,6 +5746,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 1686440414, guid: 2fe12567cf54f42488f986bab58ce094, type: 3}
+      propertyPath: jumpStrength
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 6671642836311468284, guid: 2fe12567cf54f42488f986bab58ce094,
         type: 3}
       propertyPath: m_Name
@@ -6118,7 +6122,7 @@ GameObject:
   - component: {fileID: 1354464178}
   m_Layer: 0
   m_Name: Fin (4)
-  m_TagString: Untagged
+  m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7248,7 +7252,7 @@ GameObject:
   - component: {fileID: 1500420413}
   m_Layer: 0
   m_Name: Fin (2)
-  m_TagString: Untagged
+  m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
